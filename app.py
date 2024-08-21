@@ -26,22 +26,20 @@ if not openai_api_key:
 openai_client = OpenAI(api_key=openai_api_key)
 
 #Loader de .txt
-loader = TextLoader('data.txt')
-document = loader.load()
+document_paths = ['data.txt']
+documents = []
+for path in document_paths:
+    loader = TextLoader(path)
+    documents.extend(loader.load())
+
 text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
-texts = text_splitter.split_documents(document)
+texts = text_splitter.split_documents(documents)
 
 incrustacion = OpenAIEmbeddings()
 vectorstore = FAISS.from_documents(texts, incrustacion)
 
 memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
 
-# Crear la cadena de conversación
-qa = conversational_retrieval.from_llm(
-    llm=openai_client,
-    retriever=vectorstore.as_retriever(),
-    memory=memory
-)
 
 @app.route('/chat', methods=['POST'])
 def chat():
@@ -52,7 +50,7 @@ def chat():
 
     try:
         response = openai_client.generate([user_input])
-        chatbot_response = response[0].text.strip()
+        chatbot_response = response.generations[0][0].text.strip()
         
         return jsonify({"response": chatbot_response})
     except Exception as e:
