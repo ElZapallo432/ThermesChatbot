@@ -17,7 +17,8 @@ document.getElementById("input").addEventListener("keypress", function(event) {
             if (data.error) {
                 displayResponse("Error: " + data.error);
             } else {
-                displayResponse(data.response);
+                displayPrompt(userInput);
+                displayResponse(data.response); 
             }
         })
         .catch(error => {
@@ -36,5 +37,15 @@ function displayResponse(response) {
     let responseElement = document.createElement('p');
     responseElement.textContent = response;
     responseElement.style.color = 'white';
+    responseElement.style.padding = '10px';
+    terminalInside.appendChild(responseElement);
+}
+
+function displayPrompt(input) {
+    let terminalInside = document.querySelector('.terminal-inside');
+    let responseElement = document.createElement('div')
+    responseElement.textContent = input
+    responseElement.style.color = 'white';
+    responseElement.style.textAlign = 'right';
     terminalInside.appendChild(responseElement);
 }

@@ -17,7 +17,7 @@ html, body {
 }
 
 .terminal {
-    height: 70vh;
+    height: 72vh;
     width: 110vh;
     background-color: rgb(43, 40, 40);
     display: flex;
@@ -39,6 +39,7 @@ html, body {
     text-align: end;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    margin-top: 8px;
 }
 
 .terminal-inside {
@@ -48,6 +49,8 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 input {
@@ -70,3 +73,4 @@ input:focus {
     padding: 15px;
     word-wrap: break-word; /* Permite que el texto largo se ajuste al ancho del contenedor */
 }
+
