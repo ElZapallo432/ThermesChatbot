@@ -35,17 +35,19 @@ document.getElementById("input").addEventListener("keypress", function(event) {
 function displayResponse(response) {
     let terminalInside = document.querySelector('.terminal-inside');
     let responseElement = document.createElement('p');
-    responseElement.textContent = response;
+    responseElement.textContent = `> ${response}`; // Agrega el sufijo "> " antes del texto
     responseElement.style.color = 'white';
-    responseElement.style.padding = '10px';
+    responseElement.style.padding = '2px';
+    responseElement.style.textAlign = 'left'; // Alinea el texto a la izquierda
     terminalInside.appendChild(responseElement);
 }
 
 function displayPrompt(input) {
     let terminalInside = document.querySelector('.terminal-inside');
     let responseElement = document.createElement('div')
-    responseElement.textContent = input
+    responseElement.textContent = `>>> ${input}`; // Agrega el sufijo ">>> " ant
     responseElement.style.color = 'white';
-    responseElement.style.textAlign = 'right';
+    responseElement.style.padding = '3px';
+    responseElement.style.textAlign = 'left'; // Alinea el texto a la izquierda
     terminalInside.appendChild(responseElement);
 }
