@@ -1,5 +1,5 @@
 Boton de tabs  (Important) (currently)
-Mostrar texto escrito 
+Mostrar texto escrito ✔
 Chat log | que optional:sea retomable (maybe not that hard?)
 tts (nicagando)
 Boton de dejar de responder si es que genera el texto lento y no de una ( 
