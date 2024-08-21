@@ -8,7 +8,7 @@ from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.memory import ConversationBufferMemory
-from langchain.chains import conversational_retrieval
+from langchain.chains import RetrievalQA
 
 # Cargar las variables de entorno desde el archivo .env
 load_dotenv()
@@ -25,8 +25,8 @@ if not openai_api_key:
 # Configura el cliente de OpenAI
 openai_client = OpenAI(api_key=openai_api_key)
 
-#Loader de .txt
-document_paths = ['data.txt']
+# Loader de .txt
+document_paths = ['data.txt', 'data1.txt', 'data10.txt', 'data2.txt', 'data3']
 documents = []
 for path in document_paths:
     loader = TextLoader(path)
@@ -40,6 +40,13 @@ vectorstore = FAISS.from_documents(texts, incrustacion)
 
 memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
 
+# Configura el `RetrievalQA` para la cadena de recuperación
+qa_chain = RetrievalQA.from_chain_type(
+    llm=openai_client,
+    chain_type="stuff",  # Puedes ajustar el tipo de cadena según tus necesidades
+    retriever=vectorstore.as_retriever(),
+    memory=memory
+)
 
 @app.route('/chat', methods=['POST'])
 def chat():
@@ -49,8 +56,8 @@ def chat():
         return jsonify({"error": "No se proporcionó ningún mensaje."}), 400
 
     try:
-        response = openai_client.generate([user_input])
-        chatbot_response = response.generations[0][0].text.strip()
+        # Usa qa_chain para obtener la respuesta
+        chatbot_response = qa_chain.run(user_input)
         
         return jsonify({"response": chatbot_response})
     except Exception as e:
