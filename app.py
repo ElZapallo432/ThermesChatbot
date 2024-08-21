@@ -26,10 +26,10 @@ if not openai_api_key:
 openai_client = OpenAI(api_key=openai_api_key)
 
 # Loader de .txt
-document_paths = ['data.txt']
+document_paths = ['data.txt',"data1.txt", "data2.txt", "data3.txt", "data10.txt"]
 documents = []
 for path in document_paths:
-    loader = TextLoader(path)
+    loader = TextLoader(path, encoding="UTF-8")
     documents.extend(loader.load())
 
 text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
