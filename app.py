@@ -3,6 +3,12 @@ from flask_cors import CORS
 from langchain_openai import OpenAI
 import os
 from dotenv import load_dotenv
+from langchain_community.document_loaders import TextLoader
+from langchain_openai import OpenAIEmbeddings
+from langchain_community.vectorstores import FAISS
+from langchain.text_splitter import CharacterTextSplitter
+from langchain.memory import ConversationBufferMemory
+from langchain.chains import conversational_retrieval
 
 # Cargar las variables de entorno desde el archivo .env
 load_dotenv()
@@ -19,6 +25,24 @@ if not openai_api_key:
 # Configura el cliente de OpenAI
 openai_client = OpenAI(api_key=openai_api_key)
 
+#Loader de .txt
+loader = TextLoader('data.txt')
+document = loader.load()
+text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
+texts = text_splitter.split_documents(document)
+
+incrustacion = OpenAIEmbeddings()
+vectorstore = FAISS.from_documents(texts, incrustacion)
+
+memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
+
+# Crear la cadena de conversación
+qa = conversational_retrieval.from_llm(
+    llm=openai_client,
+    retriever=vectorstore.as_retriever(),
+    memory=memory
+)
+
 @app.route('/chat', methods=['POST'])
 def chat():
     user_input = request.json.get("message")
@@ -27,11 +51,8 @@ def chat():
         return jsonify({"error": "No se proporcionó ningún mensaje."}), 400
 
     try:
-        # Generar la respuesta utilizando el cliente de OpenAI
         response = openai_client.generate([user_input])
-        
-        # Acceder al texto generado
-        chatbot_response = response.generations[0][0].text.strip()
+        chatbot_response = response[0].text.strip()
         
         return jsonify({"response": chatbot_response})
     except Exception as e:
