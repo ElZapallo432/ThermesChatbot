@@ -26,14 +26,10 @@ if not openai_api_key:
 openai_client = OpenAI(api_key=openai_api_key)
 
 #Loader de .txt
-document_paths = ['data.txt', 'data1.txt', 'data2.txt']
-documents = []
-for path in document_paths:
-    loader = TextLoader(path)
-    documents.extend(loader.load())
-
+loader = TextLoader('data.txt')
+document = loader.load()
 text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
-texts = text_splitter.split_documents(documents)
+texts = text_splitter.split_documents(document)
 
 incrustacion = OpenAIEmbeddings()
 vectorstore = FAISS.from_documents(texts, incrustacion)
