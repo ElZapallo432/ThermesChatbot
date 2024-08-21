@@ -1,13 +1,15 @@
-from google.colab import userdata
-from langchain_openai import ChatOpenAI
-from langchain_core.prompts import PromptTemplate
-from langchain_core.output_parsers import StrOutputParser
-from langchain_core.runnables.passthrough import RunnablePassthrough
 import os
+from langchain.chat_models import ChatOpenAI
+from langchain.prompts import PromptTemplate
+from langchain.output_parsers import StrOutputParser
+from langchain.agents.agent_toolkits.openai.runnable import RunnableOpenAI
 
-openai_api_key = userdata.get('sk-u5tgqwS-ZdzYWIMpR7cYdZAvBPGxti24CprlcGrXYoT3BlbkFJUsVoXiOK2Zn7zpmdD9B2zOuBaZHt6bdJITqdgaxXsA')
-os.environ['sk-u5tgqwS-ZdzYWIMpR7cYdZAvBPGxti24CprlcGrXYoT3BlbkFJUsVoXiOK2Zn7zpmdD9B2zOuBaZHt6bdJITqdgaxXsA'] = openai_api_key
+# Set the OpenAI API key
+openai_api_key = os.getenv("OPENAI_API_KEY")
 
-llm = ChatOpenAI(model='gpt-4o')
+# Create the ChatOpenAI instance
+llm = ChatOpenAI(temperature=0.7, model_name="gpt-4")
 
-llm.invoke("Di: hola mundo")
+# Invoke the language model
+response = llm.generate_text("Di: hola mundo")
+print(response)
