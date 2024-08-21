@@ -27,8 +27,11 @@ def chat():
         return jsonify({"error": "No se proporcionó ningún mensaje."}), 400
 
     try:
+        # Generar la respuesta utilizando el cliente de OpenAI
         response = openai_client.generate([user_input])
-        chatbot_response = response[0].text.strip()
+        
+        # Acceder al texto generado
+        chatbot_response = response.generations[0][0].text.strip()
         
         return jsonify({"response": chatbot_response})
     except Exception as e:
