@@ -22,7 +22,7 @@ if not openai_api_key:
     raise ValueError("La clave API de OpenAI no está configurada.")
 
 # Configura el cliente de OpenAI
-openai_client = OpenAI(api_key=openai_api_key)
+openai_client = OpenAI(api_key=openai_api_key, max_tokens= -1)
 
 # Loader de .txt
 document_paths = ['data.txt', 'data1.txt', 'data2.txt', 'data3.txt', 'data10.txt']
