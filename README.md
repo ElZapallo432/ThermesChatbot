@@ -23,8 +23,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project/ Sobre el proyecto
 
-![Interfaz de la pagina](WhatsApp Image 2024-08-22 at 01.23.05.jpeg)
-
 <div class="lang-box lang-en">
     <h2>About The Project</h2>
     <p>This project started as a challenge for the Hackathon Accenture UC 2024, the challenge was to make a chatbot that we trained to answer specific questions. It didn't have any requirements like a webpage but as a team we chose to make a real and usable chatbot. We are all freshman studying computer science and decided to challenge ourselves with a project that was somewhat big and that we had only 3 days to complete.</p>
@@ -71,7 +69,7 @@
 
 
 
-<!-- >AGREGAR IMAGEN sobre la terminal  -->  
+![Interfaz de la pagina](/WhatsApp Image 2024-08-22 at 01.23.05.jpeg) 
 
 We also have a link to each of the creators github profiles if you click in the Thermes section on the top left corner of the page as a little easter egg. 
 
