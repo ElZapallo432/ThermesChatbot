@@ -55,6 +55,7 @@
 <!-- METHOD OF USE -->
 <div class="lang-box lang-en">
     <h2>Method of Use</h2>
+ <p>¡To open this webpage you need to download this repositories files and open app.py through the terminal, then you can go ahead and open the index file and begin ussing the chatbot!
     <p>This chatbot is actually pretty simple to use;</p>
     <p>The interface is clearly inspired by the O.S terminal, that is merely a design choice that we found fitting for this project as we are also at the time trying to make a terminal chatting service.</p>
     <p>Through this fake terminal you can chat with Thermes Chatbot, it's trained to know a lot about Chilean plan regarding AI and the EU regulation concerning AI as well. It was trained specifically for both these topics but it can also answer common questions although it can fail sometimes, refreshing the page seems to fix the problem.</p>
@@ -62,6 +63,7 @@
 
 <div class="lang-box lang-es">
     <h2>Método de uso</h2>
+    <p>¡Para abrir la pagina web localmente se debe descargar todos los archivos de este repositorio, una vez dentro a traves de terminal se debe ejecutrar app.py y luego ingresar al index, luego puedes comenzar  a usar el chatbot!
     <p>Este chatbot es bastante simple de usar;</p>
     <p>La interfaz está claramente inspirada por la terminal del S.O, es meramente una decisión estética que encontramos adecuada para el proyecto ya que a la vez estamos tratando de crear un servicio de mensajería a través de la terminal.</p>
     <p>A través de esta terminal falsa puedes chatear con Thermes Chatbot, está entrenado para saber sobre el plan de Chile con la Inteligencia Artificial y sobre el reglamento de la UE también sobre IA. Está entrenado específicamente para estos dos temas pero también puede responder preguntas comunes aunque algunas veces puede fallar, para solucionarlo se debe refrescar la página.</p>
