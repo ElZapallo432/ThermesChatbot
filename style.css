@@ -5,6 +5,12 @@
     font-style: normal;
 }
 
+.navbar
+{
+    display: flex;
+    align-items: center;
+}
+
 .header-logo
 {
     margin-top: 30px;
@@ -12,9 +18,62 @@
     font-size: 30px; /* Manuel30 referencia */
     background: rgb(165, 171, 172);
     width: 10vw;
-    padding: 10px 10px 10px 25px;
+    padding: 15px 1px 15px 15px;
     color: rgb(73, 78, 77);
     border-radius: 0px 20px 20px 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+.menu-drop
+{
+    background: rgb(112, 109, 109);
+    width: 81.5vw;
+    height: 10vh;
+    margin-top: 0px;
+    align-items: center;
+    border-bottom-right-radius: 20px;
+    white-space: nowrap;
+    font-size: 20px;
+
+    position: absolute;
+    left: 12rem;
+    opacity: 0;
+    transform: translateX(-100%); /* Inicialmente fuera de la pantalla a la izquierda */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transiciones para opacidad y posición */
+    display: block; /* Mantener en el flujo del documento para transiciones */
+
+}
+
+li{
+    padding-top: 28px;
+    list-style: none;
+    display: inline-block;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu-drop.show {
+    opacity: 1;
+    transform: translateX(0); /* Movimiento hacia la posición original */
+    
+}   
+
+.menu-drop.hide {
+    opacity: 0;
+    transform: translateX(-100%); /* Movimiento fuera de la pantalla a la izquierda */
 }
 
 html, body {
@@ -33,7 +92,7 @@ html, body {
     background-blend-mode: lighten; /* Mezcla la imagen con el color de fondo */
 
     /* Filtros para ajustar brillo y contraste */
-    filter: brightness(0.96) contrast(1.1); /* Aumenta el brillo y el contraste */
+    filter: brightness(0.982) contrast(1.1); /* Aumenta el brillo y el contraste */
 
 }
 

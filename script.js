@@ -39,17 +39,9 @@ function displayResponse(response) {
     responseElement.style.color = 'white';
     responseElement.style.padding = '2px';
     responseElement.style.textAlign = 'left'; // Alinea el texto a la izquierda
+    responseElement.style.fontFamily = 'Arial, sans-serif'; // Especifica la fuente sans-serif
     terminalInside.appendChild(responseElement);
 
-    let index = 0;
-    function typeWriter() {
-        if (index < response.length) {
-            responseElement.textContent += response.charAt(index);
-            index++;
-            setTimeout(typeWriter, 40); // Velocidad de escritura, ajusta según prefieras
-        }
-    }
-    typeWriter();
 }
 
 function displayPrompt(input) {
@@ -59,5 +51,24 @@ function displayPrompt(input) {
     responseElement.style.color = 'white';
     responseElement.style.padding = '3px';
     responseElement.style.textAlign = 'left'; // Alinea el texto a la izquierda
+    responseElement.style.fontFamily = 'Arial, sans-serif'; // Especifica la fuente sans-serif
     terminalInside.appendChild(responseElement);
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const headerLogo = document.getElementById('header-logo');
+    const menuDrop = document.querySelector('.menu-drop');
+
+    headerLogo.addEventListener('click', () => {
+        if (menuDrop.classList.contains('show')) {
+            menuDrop.classList.remove('show');
+            menuDrop.classList.add('hide');
+            headerLogo.style.borderRadius = '0px 20px 20px 20px';
+        } else {
+            menuDrop.classList.remove('hide');
+            menuDrop.classList.add('show');
+            headerLogo.style.borderRadius = '0px 0px 0px 20px';
+        }
+    });
+});
+
