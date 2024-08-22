@@ -23,7 +23,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project/ Sobre el proyecto
 
-[![Interfaz de la pagina](WhatsApp Image 2024-08-22 at 01.23.05.jpeg)
+![Interfaz de la pagina](WhatsApp Image 2024-08-22 at 01.23.05.jpeg)
 
 <div class="lang-box lang-en">
     <h2>About The Project</h2>
