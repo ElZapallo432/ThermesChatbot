@@ -117,5 +117,3 @@ Project Link: [https://github.com/ElZapallo432/ThermesChatbot](https://github.co
 [Git]: https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white
 [Git-url]: https://git-scm.com/
 
-
-
