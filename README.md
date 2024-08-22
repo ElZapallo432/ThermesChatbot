@@ -75,7 +75,7 @@
 
 We also have a link to each of the creators github profiles if you click in the Thermes section on the top left corner of the page as a little easter egg. 
 
-La página también cuenta con un link a los perfiles de github de los creadores, si se le hace click en la sección Thermes en la esquina superior izquierda de la página.
+La página también cuenta con un enlace a los perfiles de github de los creadores, si se le hace click en la sección Thermes en la esquina superior izquierda de la página.
 
 <!-- >AGREGAR IMAGEN con esquina superior izquierda señalada   -->  
 
