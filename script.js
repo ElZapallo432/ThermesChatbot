@@ -40,6 +40,16 @@ function displayResponse(response) {
     responseElement.style.padding = '2px';
     responseElement.style.textAlign = 'left'; // Alinea el texto a la izquierda
     terminalInside.appendChild(responseElement);
+
+    let index = 0;
+    function typeWriter() {
+        if (index < response.length) {
+            responseElement.textContent += response.charAt(index);
+            index++;
+            setTimeout(typeWriter, 40); // Velocidad de escritura, ajusta según prefieras
+        }
+    }
+    typeWriter();
 }
 
 function displayPrompt(input) {

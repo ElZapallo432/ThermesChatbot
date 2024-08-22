@@ -12,7 +12,6 @@ from langchain.chains import RetrievalQA
 
 # Cargar las variables de entorno desde el archivo .env
 load_dotenv()
-print("OPENAI_API_KEY:", os.getenv('OPENAI_API_KEY'))
 
 app = Flask(__name__)
 CORS(app)
@@ -26,7 +25,7 @@ if not openai_api_key:
 openai_client = OpenAI(api_key=openai_api_key)
 
 # Loader de .txt
-document_paths = ['data.txt',"data1.txt", "data2.txt", "data3.txt", "data10.txt"]
+document_paths = ['data.txt', 'data1.txt', 'data2.txt', 'data3.txt', 'data10.txt']
 documents = []
 for path in document_paths:
     loader = TextLoader(path, encoding="UTF-8")
@@ -56,8 +55,15 @@ def chat():
         return jsonify({"error": "No se proporcionó ningún mensaje."}), 400
 
     try:
-        # Usa qa_chain para obtener la respuesta
-        chatbot_response = qa_chain.run(user_input)
+        # Usa qa_chain para obtener la respuesta de la base de datos local
+        local_response = qa_chain.run(user_input)
+        
+        # Si la respuesta local es insatisfactoria, usa la API de OpenAI
+        if not local_response or "i don't know." in local_response.lower():
+            openai_response = openai_client.generate([user_input])
+            chatbot_response = openai_response.generations[0][0].text.strip()
+        else:
+            chatbot_response = local_response
         
         return jsonify({"response": chatbot_response})
     except Exception as e:

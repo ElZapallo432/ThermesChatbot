@@ -1,15 +1,47 @@
+@font-face {
+    font-family: 'Castellar';
+    src: url('fonts/castellar-regular/Castellar\ Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header-logo
+{
+    margin-top: 30px;
+    margin-left: 45px; /* LaTabla45 referenfia */
+    font-size: 30px; /* Manuel30 referencia */
+    background: rgb(165, 171, 172);
+    width: 10vw;
+    padding: 10px 10px 10px 25px;
+    color: rgb(73, 78, 77);
+    border-radius: 0px 20px 20px 20px;
+}
+
 html, body {
     margin: 0;
     box-sizing: border-box; /* Cambiado de 0 a border-box */
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background: url('Wallpaper.png');
+    background-position: 70%;
+    background-repeat: no-repeat;
+    background-size: cover  ;
+    overflow-y: hidden;
+
+    /* Capa semi-transparente para aclarar la imagen */
+    background-color: rgba(255, 255, 255, 0.5); /* Un color blanco semitransparente */
+    background-blend-mode: lighten; /* Mezcla la imagen con el color de fondo */
+
+    /* Filtros para ajustar brillo y contraste */
+    filter: brightness(0.96) contrast(1.1); /* Aumenta el brillo y el contraste */
+
 }
 
 .container {
     background-color: rgb(217, 243, 234);
     background: url(wallpaper.jpeg);
     background-position: center;
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -17,7 +49,7 @@ html, body {
 }
 
 .terminal {
-    height: 72vh;
+    height: 77vh;
     width: 110vh;
     background-color: rgb(43, 40, 40);
     display: flex;
@@ -25,6 +57,7 @@ html, body {
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
+    margin-bottom: 4rem;
 }
 
 .tabs-container {   
@@ -54,7 +87,7 @@ html, body {
 }
 
 input {
-    width: 106vh;
+    width: 107vh;
     background-color: rgb(14, 13, 13);
     border-style: none;
     color: azure;
