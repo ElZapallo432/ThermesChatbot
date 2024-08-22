@@ -59,7 +59,7 @@
     <h2>Method of Use</h2>
     <p>This chatbot is actually pretty simple to use;</p>
     <p>The interface is clearly inspired by the O.S terminal, that is merely a design choice that we found fitting for this project as we are also at the time trying to make a terminal chatting service.</p>
-    <p>Through this fake terminal you can chat with Thermes Chatbot, it's trained to know a lot about Chilean plan regarding AI and the EU regulation concerning AI as well. It was trained specifically for both these topics but it can also answer common questions though it can fail sometimes, refreshing the page seems to fix the problem.</p>
+    <p>Through this fake terminal you can chat with Thermes Chatbot, it's trained to know a lot about Chilean plan regarding AI and the EU regulation concerning AI as well. It was trained specifically for both these topics but it can also answer common questions although it can fail sometimes, refreshing the page seems to fix the problem.</p>
 </div>
 
 <div class="lang-box lang-es">
