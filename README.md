@@ -55,17 +55,20 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- METHOD OF USE -->
-## Method of Use/ Metodo de uso 
+<div class="lang-box lang-en">
+    <h2>Method of Use</h2>
+    <p>This chatbot is actually pretty simple to use;</p>
+    <p>The interface is clearly inspired by the O.S terminal, that is merely a design choice that we found fitting for this project as we are also at the time trying to make a terminal chatting service.</p>
+    <p>Through this fake terminal you can chat with Thermes Chatbot, it's trained to know a lot about Chilean plan against AI and the EU regulation concerning AI as well. It was trained specifically for both these topics but it can also answer common questions though it can fail sometimes, refreshing the page seems to fix the problem.</p>
+</div>
 
-This chatbot is actually pretty simple to use;
-The interface is clearly inspired by the O.S terminal, that is merely a design choice that we found fitting for this project as we are also at the time trying to make a terminal chatting service.
+<div class="lang-box lang-es">
+    <h2>Método de uso</h2>
+    <p>Este chatbot es bastante simple de usar;</p>
+    <p>La interfaz está claramente inspirada por la terminal del S.O, es meramente una decisión estética que encontramos adecuada para el proyecto ya que a la vez estamos tratando de crear un servicio de mensajería a través de la terminal.</p>
+    <p>A través de esta terminal falsa puedes chatear con Thermes Chatbot, está entrenado para saber sobre el plan de Chile con la Inteligencia Artificial y sobre el reglamento de la UE también sobre IA. Está entrenado específicamente para estos dos temas pero también puede responder preguntas comunes aunque algunas veces puede fallar, para solucionarlo se debe refrescar la página.</p>
+</div>
 
-Through this fake terminal you can chat with Thermes Chatbot, it's trained to know a lot about Chilean plan against AI and the EU reglament concernign AI as well. It was trained specificly for both this topics but it can also answer common questions though it can fail sometimes, refreshing the page seems to fix the problem.
-
-Este chatbot es bastante simple de usar;
-La interfaz está claramente inspirada por la terminal del S.O, es meramente una desicion estetica que encontramos adecuada para el proyecto ya que a la vez estamos tratando de crear un servicio de mensajeria a traves de la terminal.
-
-A traves de esta terminal falsa puedes chattear con Thermes Chatbot, esta entrenado para saber sobre el plan de Chile con la Inteligencia Atrificial y sobre el reglamento de la UE también sobre IA. Está entrenado especificamente para estos dos temas pero tambien puede responder preguntas comunes aunque algunas veces puede fallar, para solucionarlo se debe refrescar la página.
 
 
 <!-- >AGREGAR IMAGEN sobre la terminal  -->  
