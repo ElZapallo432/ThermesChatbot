@@ -80,18 +80,17 @@ La página también cuenta con un enlace a los perfiles de github de los creador
 <!-- >AGREGAR IMAGEN con esquina superior izquierda señalada   -->  
 
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTACT -->
 ## Contact / Contacto
 
-Diego Anton - [@your_twitter](https://twitter.com/your_username) - diego.anton@estudiante.uc.cl
+Diego Anton - diego.anton@estudiante.uc.cl
 Jose Pedro Barraza - [@josepedro432](https://t.me/josepedro432) - jbarrazam4@estudiante.uc.cl
-Sebastian Besoaín - [@](https://t.me/) - sbesoain@estudiante.uc.cl
+Sebastian Besoaín - sbesoain@estudiante.uc.cl
 Vicente Cuitiño - [@mangofrapuccino](https://t.me/mangofrapuccino) - vcuis@estudiante.uc.cl
-Julian Murguia - [@your_twitter](https://twitter.com/your_username) - jmurguia@estudiante.uc.cl
-Farid Seminario - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Julian Murguia  - jmurguia@estudiante.uc.cl
+Farid Seminario - fapontes@estudiante.uc.cl
 
 Project Link: [https://github.com/ElZapallo432/ThermesChatbot](https://github.com/ElZapallo432/ThermesChatbot)
 
