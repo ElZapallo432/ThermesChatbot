@@ -89,7 +89,7 @@ La página también cuenta con un enlace a los perfiles de github de los creador
 Diego Anton - [@your_twitter](https://twitter.com/your_username) - diego.anton@estudiante.uc.cl
 Jose Pedro Barraza - [@josepedro432](https://t.me/josepedro432) - jbarrazam4@estudiante.uc.cl
 Sebastian Besoaín - [@](https://t.me/) - sbesoain@estudiante.uc.cl
-Vicente Cuitiño - [@mangoFrapuccino](https://t.me/mangofrapuccino) - vcuis@estudiante.uc.cl
+Vicente Cuitiño - [@mangofrapuccino](https://t.me/mangofrapuccino) - vcuis@estudiante.uc.cl
 Julian Murguia - [@your_twitter](https://twitter.com/your_username) - jmurguia@estudiante.uc.cl
 Farid Seminario - [@your_twitter](https://twitter.com/your_username) - email@example.com
 
