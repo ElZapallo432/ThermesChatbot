@@ -39,7 +39,7 @@ vectorstore = FAISS.from_documents(texts, incrustacion)
 
 memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
 
-# Configura el `RetrievalQA` para la cadena de recuperación
+# Configura el RetrievalQA para la cadena de recuperación
 qa_chain = RetrievalQA.from_chain_type(
     llm=openai_client,
     chain_type="stuff",  # Puedes ajustar el tipo de cadena según tus necesidades
