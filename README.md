@@ -69,7 +69,7 @@
 
 
 
-![Interfaz de la pagina](WhatsApp Image 2024-08-22 at 01.23.05.jpeg) 
+![Interfaz de la pagina](screen.jpeg) 
 
 We also have a link to each of the creators github profiles if you click in the Thermes section on the top left corner of the page as a little easter egg. 
 
