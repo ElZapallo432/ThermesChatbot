@@ -53,7 +53,17 @@ This project started as a challenge for the Hackaton Accenture UC 2024, the chal
 <!-- METHOD OF USE -->
 ## Method of Use
 
-Provide instructions on how to use your project. This could include code examples, configuration details, or other relevant information.
+This chatbot is actually pretty simple;
+The interface is clearly inspired by the OS terminal, that is merely a design choice that we found fitting for this project as we are also at the time trying to make a terminal chatting service.
+
+Through this fake terminal you can chat with Thermes Chatbot, it's trained to know a lot about Chilean plan against AI and the EU reglament concernign AI as well. It was trained specificly for both this topics but it can also answer common questions though it can fail sometimes, refreshing the page seems to fix the problem.
+
+
+<!-- >AGREGAR IMAGEN sobre la terminal  -->  
+
+We also have a link to each of the creators github profiles if you click in the Thermes section on the top left corner of the page as a little easter egg. 
+
+
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
@@ -62,7 +72,12 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Diego Anton - [@your_twitter](https://twitter.com/your_username) - diego.anton@estudiante.uc.cl
+Jose Pedro Barraza - [@your_twitter](https://twitter.com/your_username) - jbarrazam4@estudiante.uc.cl
+Sebastian Besoaín - [@your_twitter](https://twitter.com/your_username) - sbesoain@estudiante.uc.cl
+Vicente Cuitiño - [@MangoFrapuccino](https://twitter.com/your_username) - vcuis@estudiante.uc.cl
+Julian Murguia - [@your_twitter](https://twitter.com/your_username) - jmurguia@estudiante.uc.cl
+Farid Seminario - [@your_twitter](https://twitter.com/your_username) - email@example.com
 
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
