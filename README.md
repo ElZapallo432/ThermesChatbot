@@ -40,24 +40,31 @@ Este proyecto empezó como un desafio para la Hackaton Accenture UC 2024 , el de
 <!-- METHOD OF USE -->
 ## Method of Use/ Metodo de uso 
 
-This chatbot is actually pretty simple;
-The interface is clearly inspired by the OS terminal, that is merely a design choice that we found fitting for this project as we are also at the time trying to make a terminal chatting service.
+This chatbot is actually pretty simple to use;
+The interface is clearly inspired by the O.S terminal, that is merely a design choice that we found fitting for this project as we are also at the time trying to make a terminal chatting service.
 
 Through this fake terminal you can chat with Thermes Chatbot, it's trained to know a lot about Chilean plan against AI and the EU reglament concernign AI as well. It was trained specificly for both this topics but it can also answer common questions though it can fail sometimes, refreshing the page seems to fix the problem.
+
+Este chatbot es bastante simple de usar;
+La interfaz está claramente inspirada por la terminal del S.O, es meramente una desicion estetica que encontramos adecuada para el proyecto ya que a la vez estamos tratando de crear un servicio de mensajeria a traves de la terminal.
+
+A traves de esta terminal falsa puedes chattear con Thermes Chatbot, esta entrenado para saber sobre el plan de Chile con la Inteligencia Atrificial y sobre el reglamento de la UE también sobre IA. Está entrenado especificamente para estos dos temas pero tambien puede responder preguntas comunes aunque algunas veces puede fallar, para solucionarlo se debe refrescar la página.
 
 
 <!-- >AGREGAR IMAGEN sobre la terminal  -->  
 
 We also have a link to each of the creators github profiles if you click in the Thermes section on the top left corner of the page as a little easter egg. 
 
+La página también cuenta con un link a los perfiles de github de los creadores, si se le hace click en la sección Thermes en la esquina superior izquierda de la página.
+
+<!-- >AGREGAR IMAGEN con esquina superior izquierda señalada   -->  
 
 
-_For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTACT -->
-## Contact
+## Contact / Contacto
 
 Diego Anton - [@your_twitter](https://twitter.com/your_username) - diego.anton@estudiante.uc.cl
 Jose Pedro Barraza - [@josepedro432](https://t.me/josepedro432) - jbarrazam4@estudiante.uc.cl
