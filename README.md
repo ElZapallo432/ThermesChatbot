@@ -16,9 +16,19 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-This project started as a challenge for the Hackaton Accenture UC 2024, the challenge was to make a chatbot that that we trained to answer specific questions, it didnt have any requirements like a webpage but as a team we chose to make a real and ussable chatbot. We are all freshman studying computer science and decided to challenge ourselves with a project that was somewhat big and that we had only 3 days to complete.
+<div class="lang-box lang-en">
+    <h2>About The Project</h2>
+    <p>[![Product Name Screen Shot][product-screenshot]](https://example.com)</p>
+    <p>This project started as a challenge for the Hackaton Accenture UC 2024, the challenge was to make a chatbot that we trained to answer specific questions. It didn't have any requirements like a webpage but as a team we chose to make a real and usable chatbot. We are all freshman studying computer science and decided to challenge ourselves with a project that was somewhat big and that we had only 3 days to complete.</p>
+    <p>We also have a link to each of the creators' GitHub profiles if you click in the Thermes section on the top left corner of the page as a little easter egg.</p>
+</div>
 
-Este proyecto empezó como un desafio para la Hackaton Accenture UC 2024 , el desafío fue crear un chatbot entrendado por nosotros para responder preguntas especificas, no tenia requisitos de formato asi que habia libertidad de eleccion pero decidimos crear un chatbot real y usable por todo publico. Somos todos estudiantes de primer año de la licenciatura en ingenieria en ciencia de la computacion y decidimos desafiarnos con un proyecto relativamente grande para lo que llevabamos de año y con tan solo 3 dias de plazo para completarlo.
+<div class="lang-box lang-es">
+    <h2>Sobre el proyecto</h2>
+    <p>[![Product Name Screen Shot][product-screenshot]](https://example.com)</p>
+    <p>Este proyecto empezó como un desafío para la Hackaton Accenture UC 2024, el desafío fue crear un chatbot entrenado por nosotros para responder preguntas específicas. No tenía requisitos de formato, así que había libertad de elección, pero decidimos crear un chatbot real y usable por todo el público. Somos todos estudiantes de primer año de la licenciatura en ingeniería en ciencia de la computación y decidimos desafiarnos con un proyecto relativamente grande para lo que llevábamos de año y con tan solo 3 días de plazo para completarlo.</p>
+    <p>La página también cuenta con un enlace a los perfiles de GitHub de los creadores, si se le hace clic en la sección Thermes en la esquina superior izquierda de la página.</p>
+</div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
