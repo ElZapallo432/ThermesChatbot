@@ -8,11 +8,73 @@ Proyecto Thermes Chatbot
 -Contacto 
 
 
--Table of contents:
--About the project
--Built with
--Method of use
--Contact 
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Tabla de contenidos</summary>
+  <ol>
+    <li><a href="#about-the-project">Sobre el proyecto</a></li>
+    <li><a href="#built-with">Hecho con</a></li>
+    <li><a href="#method-of-use">Metodo de uso</a></li>
+    <li><a href="#contact">Contacto</a></li>
+  </ol>
+</details>
+
+<!-- ABOUT THE PROJECT -->
+## Sobre el proyecto
+
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
+
+Este proyecto empezó como un desafio para la Hackaton Accenture UC 2024 , el desafío fue crear un chatbot entrendado por nosotros para responder preguntas especificas, no tenia requisitos de formato asi que habia libertidad de eleccion pero decidimos crear un chatbot real y usable por todo publico. Somos todos estudiantes de primer año de la licenciatura en ingenieria en ciencia de la computacion y decidimos desafiarnos con un proyecto relativamente grande para lo que llevabamos de año y con tan solo 3 dias de plazo para completarlo.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Built With
+
+* [![HTML][HTML]][HTML-url]
+* [![Python][Python]][Python-url]
+* [![JavaScript][JavaScript]][JavaScript-url]
+* [![CSS][CSS]][CSS-url]
+* [![Flask][Flask]][Flask-url]
+* [![Requests][Requests]][Requests-url]
+* [![OpenAI][OpenAI]][OpenAI-url]
+* [![CORS][CORS]][CORS-url]
+* [![Git][Git]][Git-url]
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- METHOD OF USE -->
+## Method of Use
+
+This chatbot is actually pretty simple;
+The interface is clearly inspired by the OS terminal, that is merely a design choice that we found fitting for this project as we are also at the time trying to make a terminal chatting service.
+
+Through this fake terminal you can chat with Thermes Chatbot, it's trained to know a lot about Chilean plan against AI and the EU reglament concernign AI as well. It was trained specificly for both this topics but it can also answer common questions though it can fail sometimes, refreshing the page seems to fix the problem.
+
+
+<!-- >AGREGAR IMAGEN sobre la terminal  -->  
+
+We also have a link to each of the creators github profiles if you click in the Thermes section on the top left corner of the page as a little easter egg. 
+
+
+
+_For more examples, please refer to the [Documentation](https://example.com)_
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTACT -->
+## Contact
+
+Diego Anton - [@your_twitter](https://twitter.com/your_username) - diego.anton@estudiante.uc.cl
+Jose Pedro Barraza - [@josepedro432](https://t.me/josepedro432) - jbarrazam4@estudiante.uc.cl
+Sebastian Besoaín - [@](https://t.me/) - sbesoain@estudiante.uc.cl
+Vicente Cuitiño - [@mangoFrapuccino](https://t.me/mangofrapuccino) - vcuis@estudiante.uc.cl
+Julian Murguia - [@your_twitter](https://twitter.com/your_username) - jmurguia@estudiante.uc.cl
+Farid Seminario - [@your_twitter](https://twitter.com/your_username) - email@example.com
+
+Project Link: [https://github.com/ElZapallo432/ThermesChatbot](https://github.com/ElZapallo432/ThermesChatbot)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- TABLE OF CONTENTS -->
