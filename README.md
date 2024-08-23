@@ -90,8 +90,6 @@ Diego Anton - diego.anton@estudiante.uc.cl
 Jose Pedro Barraza - [@josepedro432](https://t.me/josepedro432) - jbarrazam4@estudiante.uc.cl
 Sebastian Besoaín - sbesoain@estudiante.uc.cl
 Vicente Cuitiño - [@mangofrapuccino](https://t.me/mangofrapuccino) - vcuis@estudiante.uc.cl
-Julian Murguia  - jmurguia@estudiante.uc.cl
-Farid Seminario - fapontes@estudiante.uc.cl
 
 Project Link: [https://github.com/ElZapallo432/ThermesChatbot](https://github.com/ElZapallo432/ThermesChatbot)
 
